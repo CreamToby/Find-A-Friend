@@ -14,7 +14,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #f9f6f6;
+    background: #ffeadc;  
 }
 
 .header {
