@@ -7,6 +7,14 @@
     <script src="https://kit.fontawesome.com/78408a8b89.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="contact.css">
     <title>contact</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("BDcUbW5SuIlUHakkm");
+        })();
+    </script>
 </head>
 <body>
     <nav>
@@ -14,9 +22,9 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Match</a></li>
+            <li><a href="match.html">Match</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">All Pets</a></li>
+            <li><a href="allPets.html" target="_blank">All Pets</a></li>
         </ul>
     </nav>
 
@@ -51,18 +59,18 @@
                 </div>
             </div>
             <div class="contactForm">
-                <form>
+                <form id="contact-form">
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                        <input type="text" required="required">
+                        <input type="text" id="name" required="required">
                         <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" required="required">
+                        <input type="text" id="email" required="required">
                         <span>Email</span>
                     </div>
                     <div class="inputBox">
-                        <textarea required="required"></textarea>
+                        <textarea id="message" required="required"></textarea>
                         <span>Type your message...</span>
                     </div>
                     <div class="inputBox">
@@ -72,5 +80,7 @@
             </div>
         </div>
     </section>
+
+    <script src="app.js"></script>
 </body>
 </html>
