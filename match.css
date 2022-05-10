@@ -44,7 +44,7 @@ nav ul li a:hover {
 
 .container {
     width: 100%;
-    /* height: auto; */
+    height: auto;
     background: url('https://images.unsplash.com/photo-1541450711770-551bbd9ab9d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,7 +58,7 @@ nav ul li a:hover {
     color: black;
     text-align: center;
     padding: 30px;
-    margin-bottom: 10px;
+    margin: 20px;
     font-size: 40px;
     letter-spacing: .2rem;
 }
@@ -70,10 +70,13 @@ nav ul li a:hover {
 }
 
 .pet-container p {
-    border: 1px black solid;
-    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: 3px black solid;
+    border-radius: 10px;
+    padding: 10px 30px;
     font-size: 30px;
     letter-spacing: 0.1rem;
+    margin: 50px;
 }
 
 .pet-container a {
@@ -81,3 +84,9 @@ nav ul li a:hover {
     color: inherit;
 }
 
+@media (min-width: 1440px) {
+    .container {
+        height: 100%;
+        padding-bottom: 150px;
+    }
+}
