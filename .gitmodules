@@ -1,0 +1,3 @@
+[submodule "PetoftheWeek"]
+	path = PetoftheWeek
+	url = https://github.com/CreamToby/PetoftheWeek.git
